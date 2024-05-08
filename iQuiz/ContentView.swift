@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  iQuiz
 //
-//  Created by stlp on 5/7/24.
+//  Created by Shiina on 5/7/24.
 //
 
 import SwiftUI
