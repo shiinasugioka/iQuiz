@@ -17,14 +17,13 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            
             List(categories, id: \.self) { category in
                 NavigationLink(destination: Text("\(category.description)")) {
                     HStack {
                         Image(systemName: category.icon)
                             .padding(.trailing, 10)
                             .font(.system(size: 30))
-                            .foregroundStyle(Color(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/))
+                            .foregroundStyle(Color(.green))
                         
                         VStack(alignment: .leading, spacing: 10) {
                             Text(category.name)
@@ -36,15 +35,19 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("iQuiz")
+            .navigationTitle("Home")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    NavigationLink(destination: Settings()) {
+                        Image(systemName: "gearshape.fill")
+                            .font(.system(size: 25))
+                            .padding(10)
+                    }
+                    
+                }
+            }
         }
     }
-}
-
-struct Category: Hashable {
-    let name: String
-    let description: String
-    let icon: String
 }
 
 #Preview {
