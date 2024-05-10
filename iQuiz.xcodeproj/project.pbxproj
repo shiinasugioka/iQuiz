@@ -11,6 +11,7 @@
 		DBC78BCD2BEB530E00FC235B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC78BCC2BEB530E00FC235B /* ContentView.swift */; };
 		DBC78BCF2BEB531100FC235B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC78BCE2BEB531100FC235B /* Assets.xcassets */; };
 		DBC78BD22BEB531100FC235B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC78BD12BEB531100FC235B /* Preview Assets.xcassets */; };
+		DBC78BD92BEDAD2B00FC235B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC78BD82BEDAD2B00FC235B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DBC78BCC2BEB530E00FC235B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DBC78BCE2BEB531100FC235B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBC78BD12BEB531100FC235B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DBC78BD82BEDAD2B00FC235B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				DBC78BCC2BEB530E00FC235B /* ContentView.swift */,
 				DBC78BCE2BEB531100FC235B /* Assets.xcassets */,
 				DBC78BD02BEB531100FC235B /* Preview Content */,
+				DBC78BD82BEDAD2B00FC235B /* LaunchScreen.storyboard */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC78BD92BEDAD2B00FC235B /* LaunchScreen.storyboard in Resources */,
 				DBC78BD22BEB531100FC235B /* Preview Assets.xcassets in Resources */,
 				DBC78BCF2BEB531100FC235B /* Assets.xcassets in Resources */,
 			);
