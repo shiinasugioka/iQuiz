@@ -18,7 +18,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(categories, id: \.self) { category in
-                NavigationLink(destination: Text("\(category.description)")) {
+                NavigationLink(destination: QuizScreen()) {
                     HStack {
                         Image(systemName: category.icon)
                             .padding(.trailing, 10)
