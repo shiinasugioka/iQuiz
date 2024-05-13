@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Settings: View {
-    @State private var jsonURL = ""
+    @State private var jsonURL = "http://tednewardsandbox.site44.com/questions.json"
     @State private var showAlert = false
     @Binding var categories: [Category]
     
