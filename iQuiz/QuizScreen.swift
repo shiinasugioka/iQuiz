@@ -16,7 +16,7 @@ struct QuizScreen: View {
     }
     
     var body: some View {
-        Text("Quiz screen for \(category.name)")
+        Text("Quiz screen for \(category.title)")
     }
 }
 
@@ -24,9 +24,9 @@ struct QuizScreen: View {
     QuizScreen(
         category:
                 Category(
-                    name: "Mathematics",
-                    description: "Take a simple math quiz.",
-                    icon: "x.squareroot"
+                    title: "Mathematics",
+                    desc: "Take a simple math quiz.",
+                    questions: []
                 )
     )
 }

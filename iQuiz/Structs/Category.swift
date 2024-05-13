@@ -5,10 +5,9 @@
 //  Created by Shiina on 5/9/24.
 //
 
-import SwiftUI
-
-struct Category: Hashable {
-    let name: String
-    let description: String
-    let icon: String
+struct Category: Codable, Hashable {
+    let title: String
+    let desc: String
+//    let icon: String
+    let questions: [Question]
 }

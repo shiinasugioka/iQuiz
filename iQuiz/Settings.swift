@@ -10,6 +10,7 @@ import SwiftUI
 struct Settings: View {
     @State private var jsonURL = ""
     @State private var showAlert = false
+    @Binding var categories: [Category]
     
     var body: some View {
         VStack {
@@ -43,9 +44,39 @@ struct Settings: View {
             showAlert = true
             return
         }
+        
+        print("Getting data from: \(url)")
+        
+        let session = URLSession.shared
+        let task = session.dataTask(with: url) { data, repsonse, error in
+            
+            if let error = error {
+                print("Error: \(error)")
+                return
+            }
+            
+            guard let data = data else {
+                print("No data received")
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                let downloadedCategories = try decoder.decode([Category].self, from: data)
+                print("Successfully read data: \(downloadedCategories)")
+                
+                DispatchQueue.main.async {
+                    self.categories = downloadedCategories
+                }
+                
+            } catch {
+                print("Error decoding JSON data: \(error)")
+            }
+            
+        }
+        
+        task.resume()
     }
 }
 
-#Preview {
-    Settings()
-}
+

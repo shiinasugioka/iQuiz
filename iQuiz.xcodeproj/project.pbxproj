@@ -15,6 +15,7 @@
 		DBC78BDB2BEDB7C600FC235B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC78BDA2BEDB7C600FC235B /* Settings.swift */; };
 		DBC78BDD2BEDB90400FC235B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC78BDC2BEDB90400FC235B /* Category.swift */; };
 		DBC78BE02BEDBBF500FC235B /* QuizScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC78BDF2BEDBBF500FC235B /* QuizScreen.swift */; };
+		DBFC30F62BF2B835004F9A86 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC30F52BF2B835004F9A86 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		DBC78BDA2BEDB7C600FC235B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		DBC78BDC2BEDB90400FC235B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		DBC78BDF2BEDBBF500FC235B /* QuizScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizScreen.swift; sourceTree = "<group>"; };
+		DBFC30F52BF2B835004F9A86 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		DBFC30F92BF2C57F004F9A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 		DBC78BC92BEB530E00FC235B /* iQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				DBFC30F92BF2C57F004F9A86 /* Info.plist */,
 				DBC78BDE2BEDB94300FC235B /* Structs */,
 				DBC78BCA2BEB530E00FC235B /* iQuizApp.swift */,
 				DBC78BCC2BEB530E00FC235B /* ContentView.swift */,
@@ -83,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				DBC78BDC2BEDB90400FC235B /* Category.swift */,
+				DBFC30F52BF2B835004F9A86 /* Question.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				DBC78BCD2BEB530E00FC235B /* ContentView.swift in Sources */,
 				DBC78BCB2BEB530E00FC235B /* iQuizApp.swift in Sources */,
 				DBC78BDD2BEDB90400FC235B /* Category.swift in Sources */,
+				DBFC30F62BF2B835004F9A86 /* Question.swift in Sources */,
 				DBC78BE02BEDBBF500FC235B /* QuizScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +305,7 @@
 				DEVELOPMENT_TEAM = FV8X8GGK72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iQuiz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,6 +335,7 @@
 				DEVELOPMENT_TEAM = FV8X8GGK72;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iQuiz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
