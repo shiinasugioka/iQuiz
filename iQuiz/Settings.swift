@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct Settings: View {
-    @State private var jsonURL = "http://tednewardsandbox.site44.com/questions.json"
-    @State private var showAlert = false
+    @State private var jsonURL = ""
+    @State private var showUrlAlert = false
+    @State private var showNetworkErrorAlert = false
     @Binding var categories: [Category]
     
     var body: some View {
@@ -30,18 +31,21 @@ struct Settings: View {
             .foregroundColor(.white)
             .background(Color.blue)
             .cornerRadius(10)
-            .alert(isPresented: $showAlert) {
+            .alert(isPresented: $showUrlAlert) {
                 Alert(title: Text("Invalid URL"), message: Text("Please enter a valid URL"), dismissButton: .default(Text("OK")))
             }
             
         }
         .padding(40)
         .navigationTitle("Settings")
+        .alert(isPresented: $showNetworkErrorAlert) {
+            Alert(title: Text("Network Error"), message: Text("Please check your internet connection and try again"), dismissButton: .default(Text("OK")))
+        }
     }
     
     private func downloadData() {
         guard let url = URL(string: jsonURL) else {
-            showAlert = true
+            showUrlAlert = true
             return
         }
         
@@ -52,6 +56,7 @@ struct Settings: View {
             
             if let error = error {
                 print("Error: \(error)")
+                showNetworkErrorAlert = true
                 return
             }
             
